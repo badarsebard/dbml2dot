@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dbmlviz"
-version = "0.3.0"
+version = "0.4.0"
 description = "Converts DBML files to their graphviz representation in .dot format. It can also optionally do the additional conversion to an image format using graphviz."
 readme = "README.md"
 authors = [
-    { name = "Antoine Viallon (aviallon)", email = "antoine+pip@lesviallon.fr" }
+    { name = "Jason Rauen (badarsebard)", email = "jason.rauen@gmail.com" }
 ]
 license = { text = "GPL-3.0-or-later" }
 requires-python = ">=3.8"
