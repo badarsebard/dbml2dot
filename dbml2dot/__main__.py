@@ -5,7 +5,8 @@ import argparse
 from dbml2dot.generators import generate_graph_from_dbml
 from dbml2dot.utils import debug, set_debug
 
-if __name__ == '__main__':
+
+def main():
     parser = argparse.ArgumentParser(prog="dbml2dot")
     parser.add_argument("-i", "--input", dest="input", help="Input file (.dbml)", type=str, required=True)
     parser.add_argument("-o", "--output", dest="output",
@@ -46,3 +47,7 @@ if __name__ == '__main__':
         check_call(['dot', f'-T{args.type}', output_path.absolute(), '-o', output_path.with_suffix('.svg').absolute()])
 
     debug(f"Input: {input_path}, Output: {output_path}")
+
+
+if __name__ == '__main__':
+    main()

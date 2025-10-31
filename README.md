@@ -2,13 +2,32 @@
 Author: Antoine VIALLON
 
 # Usage
+
+## Using uvx (recommended)
+```bash
+# Run directly with uvx
+uvx dbmlviz dbml2dot -h
+
+# Or run from local directory
+uvx --from . dbml2dot -h
 ```
-pip install git+https://github.com/aviallon/dbml2dot.git
+
+## Using pip
+```bash
+pip install dbmlviz
+dbml2dot -h
+# Or run as module
 python -m dbml2dot -h
 ```
 
 ### Example
-```
+```bash
+# With uvx
+uvx dbmlviz dbml2dot -i schema.dbml -o schema.dot --type svg
+
+# With pip install
+dbml2dot -i schema.dbml -o schema.dot --type svg
+# Or
 python -m dbml2dot -i schema.dbml -o schema.dot --type svg
 ```
 This will output two files, one named `schema.dot` corresponding to the generated dot output,

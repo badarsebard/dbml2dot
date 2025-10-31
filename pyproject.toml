@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dbmlviz"
+version = "0.3.0"
+description = "Converts DBML files to their graphviz representation in .dot format. It can also optionally do the additional conversion to an image format using graphviz."
+readme = "README.md"
+authors = [
+    { name = "Antoine Viallon (aviallon)", email = "antoine+pip@lesviallon.fr" }
+]
+license = { text = "GPL-3.0-or-later" }
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: System Administrators",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "pydbml~=0.3.4",
+    "pydot~=1.4.2",
+]
+
+[project.urls]
+Homepage = "https://github.com/aviallon/dbml2dot"
+
+[project.scripts]
+dbml2dot = "dbml2dot.__main__:main"
+
+[tool.setuptools]
+packages = ["dbml2dot"]
