@@ -10,7 +10,7 @@ readme = "README.md"
 authors = [
     { name = "Jason Rauen (badarsebard)", email = "jason.rauen@gmail.com" }
 ]
-license = { text = "GPL-3.0-or-later" }
+license = { file = "LICENSE" }
 requires-python = ">=3.8"
 classifiers = [
     "Development Status :: 3 - Alpha",
