@@ -32,10 +32,10 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/aviallon/dbml2dot"
+Homepage = "https://github.com/badarsebard/dbmlviz"
 
 [project.scripts]
-dbml2dot = "dbml2dot.__main__:main"
+dbmlviz = "dbmlviz.__main__:main"
 
 [tool.setuptools]
-packages = ["dbml2dot"]
+packages = ["dbmlviz"]

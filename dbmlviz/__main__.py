@@ -2,12 +2,12 @@ import pydbml.classes
 import pathlib
 import argparse
 
-from dbml2dot.generators import generate_graph_from_dbml
-from dbml2dot.utils import debug, set_debug
+from dbmlviz.generators import generate_graph_from_dbml
+from dbmlviz.utils import debug, set_debug
 
 
 def main():
-    parser = argparse.ArgumentParser(prog="dbml2dot")
+    parser = argparse.ArgumentParser(prog="dbmlviz")
     parser.add_argument("-i", "--input", dest="input", help="Input file (.dbml)", type=str, required=True)
     parser.add_argument("-o", "--output", dest="output",
                         help="Output file (.dot), by default the input filename with .dot prefix",

@@ -3,7 +3,7 @@ from textwrap import dedent
 import pydbml.classes
 import pydot
 
-from dbml2dot.utils import debug
+from dbmlviz.utils import debug
 
 
 def generate_table_label(name: str, attributes: list[str]):
